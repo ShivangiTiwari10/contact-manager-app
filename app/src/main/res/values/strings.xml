@@ -1,4 +1,7 @@
 <resources>
     <string name="app_name">Contact manager app</string>
     <string name="todo">TODO</string>
+    <string name="name">Name</string>
+    <string name="email">Email</string>
+    <string name="passward">Password</string>
 </resources>
