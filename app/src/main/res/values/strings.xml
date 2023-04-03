@@ -6,4 +6,6 @@
     <string name="passward">Password</string>
     <string name="fill_all_field">Fill all field</string>
     <string name="signup">SignUp</string>
+    <string name="login">LogIn</string>
+    <string name="welcome_to_signin_screen">Welcome to signIn Screen</string>
 </resources>
