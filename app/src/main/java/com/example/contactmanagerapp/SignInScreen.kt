@@ -1,5 +1,6 @@
 package com.example.contactmanagerapp
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Toast
@@ -37,6 +38,8 @@ class SignInScreen : AppCompatActivity() {
 
 
             if (it.exists()) {
+                val intent = Intent(this, AddContacts::class.java)
+                startActivity(intent)
 
                 Toast.makeText(this, "User exists", Toast.LENGTH_SHORT).show()
 
