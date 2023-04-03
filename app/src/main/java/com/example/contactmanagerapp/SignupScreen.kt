@@ -1,5 +1,6 @@
 package com.example.contactmanagerapp
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Toast
@@ -34,7 +35,11 @@ class SignupScreen : AppCompatActivity() {
                     binding.editName.text?.clear()
                     binding.editEmail.text?.clear()
                     binding.editPassword.text?.clear()
+
                     Toast.makeText(this, "User logged In", Toast.LENGTH_SHORT).show()
+                    val intent = Intent(this, SignInScreen::class.java)
+                    startActivity(intent)
+
                 }.addOnFailureListener {
                     Toast.makeText(this, "Failed", Toast.LENGTH_SHORT).show()
 
