@@ -11,7 +11,7 @@ import com.google.firebase.database.FirebaseDatabase
 class SignupScreen : AppCompatActivity() {
     private lateinit var binding: ActivitySignupScreenBinding
 
-    lateinit var database: DatabaseReference
+    private lateinit var database: DatabaseReference
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
