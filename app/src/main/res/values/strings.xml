@@ -4,4 +4,6 @@
     <string name="name">Name</string>
     <string name="email">Email</string>
     <string name="passward">Password</string>
+    <string name="fill_all_field">Fill all field</string>
+    <string name="signup">SignUp</string>
 </resources>
