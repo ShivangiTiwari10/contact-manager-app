@@ -2,7 +2,7 @@ package com.example.contactmanagerapp
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-    import android.widget.Toast
+import android.widget.Toast
 import com.example.contactmanagerapp.contact.userInfo
 import com.example.contactmanagerapp.databinding.ActivityAddContectsBinding
 import com.google.firebase.database.DatabaseReference
