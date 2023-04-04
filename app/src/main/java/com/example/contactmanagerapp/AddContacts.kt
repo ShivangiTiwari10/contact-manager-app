@@ -1,5 +1,7 @@
 package com.example.contactmanagerapp
 
+import android.annotation.SuppressLint
+import android.app.Dialog
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Toast
@@ -10,8 +12,10 @@ import com.google.firebase.database.FirebaseDatabase
 
 class AddContacts : AppCompatActivity() {
     private lateinit var binding: ActivityAddContectsBinding
+    private lateinit var dialog: Dialog
 
     private lateinit var database: DatabaseReference
+    @SuppressLint("UseCompatLoadingForDrawables")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
@@ -37,6 +41,10 @@ class AddContacts : AppCompatActivity() {
 
                     Toast.makeText(this, "Contact saved", Toast.LENGTH_SHORT).show()
 
+                    dialog = Dialog(this)
+                    dialog.setContentView(R.layout.custom_dialog)
+                    dialog.window?.setBackgroundDrawable(getDrawable(R.drawable.bg_custom_box))
+                    dialog.show()
                 }.addOnFailureListener {
                     Toast.makeText(this, "Something went wrong", Toast.LENGTH_SHORT).show()
 
